@@ -1,12 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Carme&family=Poppins:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carme&family=Italiana&family=Poppins:wght@300;400&family=Roboto:wght@300;400&display=swap');
 
-@font-face {
-    font-family: montreal;
-    src: url('/src/public/neue-montreal-free-demo-pangram-pangram-030418/NeueMontreal-Regular.otf');
-}
 ul>a{
     margin-right: 2.5rem;
     height: fit-content;
@@ -14,7 +10,7 @@ ul>a{
 
 ul>a:hover{
     color: #FF6000 ;
-    transition:  ease-in-out 0.5s;
+    transition:  ease-in-out 0.3s;
 }
 
 ::selection{
@@ -76,3 +72,18 @@ ul>a:hover{
     opacity: 1;
   }
   
+#Hero-last p::selection{
+  color: #fef8f1;
+  background-color: rgb(2, 6, 23);
+}
+#work2 h1{
+  font-size: 3.5rem;
+  font-weight: 500;
+  color: transparent;
+  -webkit-text-stroke: 1px #000;
+}
+#work1 ::selection{
+  color: #fef8f1;
+  background-color: rgb(2, 6, 23);
+}
+

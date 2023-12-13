@@ -9,7 +9,6 @@ export default function Home() {
       <NavBar/>
       <div>
       <Hero/>
-      <Work/>
 
       </div>
 
