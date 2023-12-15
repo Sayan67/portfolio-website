@@ -87,3 +87,15 @@ ul>a:hover{
   background-color: rgb(2, 6, 23);
 }
 
+.hero>h1:hover{
+  color: rgb(51, 51, 51);
+}
+#dot{
+  -webkit-text-stroke: 1px #ffffff;
+}
+
+.logo:hover{
+  .copyright{
+    rotate: 360deg;
+  }
+}

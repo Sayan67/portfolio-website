@@ -2,11 +2,16 @@ import React from 'react'
 import Footer from '../Footer/Footer'
 import Contact from '../Contact/Contact'
 
-import { Roboto } from 'next/font/google'
+import { Roboto,Cinzel } from 'next/font/google'
 const roboto = Roboto({
     subsets: ['latin'],
     weight: ['400'],
 })
+const cinzel = Cinzel({
+    subsets:['latin'],
+    weight:'400',
+})
+
 
 
 function Work() {
@@ -38,8 +43,8 @@ function Work() {
     return (
         <>
             <div style={roboto.style} id='work1' className=' w-full px-[10.4rem] pb-12'>
-                <h1 className='leading-none text-[3.5rem]'>My</h1>
-                <div id='work2' className='flex  leading-none px-[2.4rem] w-full bg-[#fef8f1]'>
+                <h1 className='leading-none text-[3.5rem] tracking-wider'>My</h1>
+                <div id='work2' className='flex tracking-wider leading-none px-[2.4rem] w-full bg-[#fef8f1]'>
                     <h1>Works</h1>
                 </div>
                 {/* work body */}

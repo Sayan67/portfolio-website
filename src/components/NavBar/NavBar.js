@@ -5,12 +5,17 @@ import { CiMenuBurger } from "react-icons/ci";
 
 
 //Fonts
-import { Carme,Roboto } from "next/font/google"
+import { Carme,Roboto,Cinzel } from "next/font/google"
 const roboto = Roboto({
     subsets: ['latin'],
     weight: '300',
     style: 'normal',
 })
+const cinzel = Cinzel({
+    subsets:['latin'],
+    weight:'400',
+})
+
 
 
 
@@ -19,7 +24,7 @@ export default function NavbBar() {//bg-#08090c
         <>
             <div style={roboto.style} className=" flex w-full h-fit bg-[#fef8f1] text-slate-950 py-11 px-14  justify-between ">
                 <div className="logo flex items-center gap-2 hover:text-[#FF6000] hover:duration-500">
-                    <FaRegCopyright/><h1>Daas</h1>
+                    <FaRegCopyright className="copyright duration-300"/><h1 className="font-[800]">Daas</h1>
                 </div>
 
                 <div>
