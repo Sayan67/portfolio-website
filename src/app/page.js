@@ -6,11 +6,11 @@ export default function Home() {
   
   return (
     <>
-      <NavBar/>
-      <div>
+    <div className="">
+       <NavBar/>
       <Hero/>
-
-      </div>
+    </div>
+      
 
     </>
   )

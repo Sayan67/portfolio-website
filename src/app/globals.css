@@ -3,6 +3,31 @@
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Carme&family=Italiana&family=Poppins:wght@300;400&family=Roboto:wght@300;400&display=swap');
 
+@font-face {
+  font-family: 'maronbarista' ;
+  src: url('../public/maronbarista.otf');
+    font-style: normal;
+}
+body {
+	background: radial-gradient(-45deg, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
 ul>a{
     margin-right: 2.5rem;
     height: fit-content;
@@ -16,61 +41,6 @@ ul>a:hover{
 ::selection{
     color: #FFA559;
 }
-.navMenu a {
-    text-decoration: none;
-    display: inline-block;
-    -webkit-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-  }
-  
-  .navMenu a:hover {
-    color: #FF6000;
-  }
-  
-  .navMenu .dot {
-    margin-top: 8px;
-    width: 9px;
-    height: 9px;
-    background: #FF6000;
-    border-radius: 50%;
-    opacity: 0;
-    -webkit-transform: translateX(1.25rem);
-    transform: translateX(1.25rem);
-    -webkit-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-  }
-  
-  .navMenu a:nth-child(1):hover ~ .dot {
-    -webkit-transform: translateX(1.27rem);
-    transform: translateX(1.27rem);
-    -webkit-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-    opacity: 1;
-  }
-  
-  .navMenu a:nth-child(2):hover ~ .dot {
-    -webkit-transform: translateX(6.8rem);
-    transform: translateX(6.8rem);
-    -webkit-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-    opacity: 1;
-  }
-  
-  .navMenu a:nth-child(3):hover ~ .dot {
-    -webkit-transform: translateX(12.5rem);
-    transform: translateX(12.5rem);
-    -webkit-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-    opacity: 1;
-  }
-  
-  .navMenu a:nth-child(4):hover ~ .dot {
-    -webkit-transform: translateX(18.9rem);
-    transform: translateX(18.9rem);
-    -webkit-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-    opacity: 1;
-  }
   
 #Hero-last p::selection{
   color: #fef8f1;
@@ -98,4 +68,7 @@ ul>a:hover{
   .copyright{
     rotate: 360deg;
   }
+}
+.hero-main{
+  font-family: 'maronbarista';
 }

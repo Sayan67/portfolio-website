@@ -22,22 +22,16 @@ const cinzel = Cinzel({
 export default function NavbBar() {//bg-#08090c
     return (
         <>
-            <div style={roboto.style} className=" flex w-full h-fit bg-[#fef8f1] text-slate-950 py-11 px-14  justify-between ">
-                <div className="logo flex items-center gap-2 hover:text-[#FF6000] hover:duration-500">
-                    <FaRegCopyright className="copyright duration-300"/><h1 className="font-[800]">Daas</h1>
-                </div>
-
-                <div>
-                    <ul className="navMenu flex items-center h-fit font-extralight tracking-[0.2rem]">
-                        <a href="" className="navbar-elements">Work</a>
-                        <a href="" className="navbar-elements mr-0">Menu</a>
-                        <a href="" className=" navbar-elements ml-3 mr-0 text-3xl"><CiMenuBurger/></a>
-                        {/* <button className="rounded-md bg-[#FF6000] text-white px-4 py-2">Deploy me</button> */}
+            <div className="flex fixed w-full h-16 mt-3 justify-center items-center text-white">
+                <div className="flex w-fit h-16 bg-slate-400 backdrop-blur-sm rounded-full justify-center items-center px-8 py-1">
+                    <ul className="flex justify-center gap-5 items-center">
+                        <li>Work</li>
+                        <li>About</li>
+                        <li>Contact</li>
                     </ul>
+
                 </div>
-
             </div>
-
         </>
     )
 
